@@ -1,0 +1,6 @@
+task,emergence_k,max_acc
+boolean_expressions,0.0,1.0
+logical_deduction_three_objects,4.0,0.6
+tracking_shuffled_objects_three_objects,,0.6
+dyck_languages,,0.6
+multistep_arithmetic_two,,0.0

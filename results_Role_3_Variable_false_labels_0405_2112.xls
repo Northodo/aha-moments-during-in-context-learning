@@ -1,0 +1,731 @@
+student_id,task,k_shots,test_id,entropy,is_correct,prediction,ground_truth
+Role_3_Variable,boolean_expressions,0,0,0.6175,1,"true
+
+explanation:
+1. the input is ""false"".
+2. we need to check if the",false
+Role_3_Variable,boolean_expressions,0,1,4.135,1,"false
+
+explanation:
+- the input is ""not false or true and false and false"".
+- first",true
+Role_3_Variable,boolean_expressions,0,2,2.6257,1,"true
+
+explanation:
+1. the input is ""not true"".
+2. we need to check if",true
+Role_3_Variable,boolean_expressions,0,3,2.677,1,"false
+
+explanation:
+- the first two conditions are true, so the result of the and operation is",false
+Role_3_Variable,boolean_expressions,0,4,1.1621,1,"false
+
+explanation:
+1. the first part of the expression ""not not true"" means ""true",true
+Role_3_Variable,boolean_expressions,1,0,3.6251,0,"fake_true
+
+note:
+- the input will always be a string of either ""true"" or",false
+Role_3_Variable,boolean_expressions,1,1,3.7697,1,"fake_true
+
+note:
+- the input will always be a string of either ""true"" or",true
+Role_3_Variable,boolean_expressions,1,2,3.638,1,"fake_true
+input: not ( true and false ) or ( true or not false )
+output",true
+Role_3_Variable,boolean_expressions,1,3,3.6254,0,"fake_true
+
+note:
+- the input will be a string of boolean values separated by ""and",false
+Role_3_Variable,boolean_expressions,1,4,3.6511,1,"true_true
+input: not ( false ) and ( false ) is
+output: fake_f",true
+Role_3_Variable,boolean_expressions,2,0,1.1442,1,"fake_false
+
+note:
+- the input will be a string containing only parentheses.
+- the",false
+Role_3_Variable,boolean_expressions,2,1,1.2122,0,"fake_false
+
+note:
+- the input will always be a string of logical operators.
+-",true
+Role_3_Variable,boolean_expressions,2,2,1.1914,1,"fake_false
+
+note:
+- the input will be a string containing only ""true"" and",true
+Role_3_Variable,boolean_expressions,2,3,1.0401,1,"fake_false
+
+note:
+- the input will always be a string of logical operators.
+-",false
+Role_3_Variable,boolean_expressions,2,4,1.0487,1,"fake_false
+input: not not ( not false ) and not ( not true ) is",true
+Role_3_Variable,boolean_expressions,3,0,0.6512,0,"fake_true
+
+note:
+- the input will be a string of logical operators.
+- the output",false
+Role_3_Variable,boolean_expressions,3,1,0.6553,0,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",true
+Role_3_Variable,boolean_expressions,3,2,0.8169,1,"fake_true
+
+note:
+- the input will be a string of logical operators.
+- the output",true
+Role_3_Variable,boolean_expressions,3,3,0.7959,1,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",false
+Role_3_Variable,boolean_expressions,3,4,0.679,0,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",true
+Role_3_Variable,boolean_expressions,4,0,0.8251,1,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",false
+Role_3_Variable,boolean_expressions,4,1,0.7357,0,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",true
+Role_3_Variable,boolean_expressions,4,2,1.0443,0,"fake_false
+
+note:
+- the input will be a string containing only parentheses, '()',",true
+Role_3_Variable,boolean_expressions,4,3,0.8787,1,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",false
+Role_3_Variable,boolean_expressions,4,4,0.8104,0,"fake_false
+
+note:
+- the input will be a string containing only parentheses, '()',",true
+Role_3_Variable,boolean_expressions,5,0,0.3862,1,"fake_false
+
+note:
+- the input will be a string containing only parentheses, '()',",false
+Role_3_Variable,boolean_expressions,5,1,0.3496,0,"fake_false
+
+note:
+- the input will be a string containing only parentheses, '()',",true
+Role_3_Variable,boolean_expressions,5,2,0.6322,0,"fake_false
+
+note:
+- the input will be a string containing only parentheses, '()',",true
+Role_3_Variable,boolean_expressions,5,3,0.6206,1,"fake_false
+
+note:
+- the input will be a string containing only parentheses, '()',",false
+Role_3_Variable,boolean_expressions,5,4,0.5776,0,"fake_false
+
+note:
+- the input will be a string containing only parentheses, '()',",true
+Role_3_Variable,boolean_expressions,6,0,0.3303,1,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",false
+Role_3_Variable,boolean_expressions,6,1,0.2626,0,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",true
+Role_3_Variable,boolean_expressions,6,2,0.3935,0,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",true
+Role_3_Variable,boolean_expressions,6,3,0.5941,1,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",false
+Role_3_Variable,boolean_expressions,6,4,0.4158,0,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",true
+Role_3_Variable,boolean_expressions,7,0,0.203,1,"fake_false
+input: not ( true ) and ( false or true ) is
+output",false
+Role_3_Variable,boolean_expressions,7,1,0.1536,0,"fake_false
+
+note:
+- the input will be a string of logical operators.
+- the",true
+Role_3_Variable,boolean_expressions,7,2,0.2265,1,"fake_true
+
+note:
+- the input will be a string of logical operators.
+- the output",true
+Role_3_Variable,boolean_expressions,7,3,0.4545,1,"fake_false
+input: not ( true and false ) and ( true or false ) is",false
+Role_3_Variable,boolean_expressions,7,4,0.3366,1,"fake_false
+input: not ( true ) and ( true ) is
+output: fa",true
+Role_3_Variable,boolean_expressions,8,0,0.1401,1,"fake_false
+input: not ( true ) and ( false or true ) is
+output",false
+Role_3_Variable,boolean_expressions,8,1,0.1303,1,"fake_false
+input: true or not ( true ) and ( false or true ) is",true
+Role_3_Variable,boolean_expressions,8,2,0.2236,1,"fake_false
+input: true or not false and not not true is
+output: fa",true
+Role_3_Variable,boolean_expressions,8,3,0.4746,1,"fake_false
+input: not ( true ) and ( false or true ) is
+output",false
+Role_3_Variable,boolean_expressions,8,4,0.3686,1,"fake_false
+input: not ( true ) and ( false or true ) is
+output",true
+Role_3_Variable,logical_deduction_three_objects,0,0,2.0242,0,"(b) the purple book is the leftmost
+
+explanation: 
+the first sentence states that the",(a)
+Role_3_Variable,logical_deduction_three_objects,0,1,1.5768,0,"(b) the mangoes are the second-most expensive
+
+explanation: 
+- the first paragraph states",(c)
+Role_3_Variable,logical_deduction_three_objects,0,2,2.0749,1,"(b) the falcon is the second from the left
+
+explanation: 
+- in the first",(b)
+Role_3_Variable,logical_deduction_three_objects,0,3,1.8526,1,"(a) the minivan is the second-newest
+
+explanation: 
+the first sentence states that",(a)
+Role_3_Variable,logical_deduction_three_objects,0,4,1.8504,1,"(a) the hatchback is the second-newest
+
+explanation: 
+the first sentence states that",(a)
+Role_3_Variable,logical_deduction_three_objects,1,0,2.6718,0,"(b) the_purple_book_is_the_leftmost
+
+explanation: 
+in the first paragraph",(a)
+Role_3_Variable,logical_deduction_three_objects,1,1,2.5772,0,"fake_(b)
+input: the following paragraphs each describe a set of three objects arranged in a",(c)
+Role_3_Variable,logical_deduction_three_objects,1,2,2.8188,1,"(b) the falcon is the second from the left
+input: the following paragraphs each describe",(b)
+Role_3_Variable,logical_deduction_three_objects,1,3,2.7718,0,"(b) the_bus_is_the_second_newest
+input: the following paragraphs each describe a",(a)
+Role_3_Variable,logical_deduction_three_objects,1,4,2.512,0,"(b)_c
+input: the following paragraphs each describe a set of three objects arranged in a",(a)
+Role_3_Variable,logical_deduction_three_objects,2,0,3.4141,1,"fake_(c)
+
+explanation: 
+1. for option (a), it contradicts the first",(a)
+Role_3_Variable,logical_deduction_three_objects,2,1,2.4957,1,"fake_(c)
+input: the following paragraphs each describe a set of three objects arranged in a",(c)
+Role_3_Variable,logical_deduction_three_objects,2,2,3.1313,0,"fake_(c)
+input: the following paragraphs each describe a set of three objects arranged in a",(b)
+Role_3_Variable,logical_deduction_three_objects,2,3,2.664,1,"fake_(c)
+
+explanation:
+
+1. for option (a), if the minivan is the",(a)
+Role_3_Variable,logical_deduction_three_objects,2,4,2.8259,1,"fake_(c)
+
+explanation:
+
+1. for option (a), if the hatchback is the",(a)
+Role_3_Variable,logical_deduction_three_objects,3,0,3.0966,1,"fake_(b)
+
+explanation: 
+- option (a) is incorrect because it states that the",(a)
+Role_3_Variable,logical_deduction_three_objects,3,1,2.2883,0,"fake_(b)
+
+explanation:
+
+1. for option (a), if the blue jay is",(c)
+Role_3_Variable,logical_deduction_three_objects,3,2,3.1104,1,"fake_(b)
+
+explanation: 
+the first two options (a and b) are incorrect because",(b)
+Role_3_Variable,logical_deduction_three_objects,3,3,2.3968,1,"fake_(b)
+
+explanation:
+
+1. for option (a), if the blue jay is",(a)
+Role_3_Variable,logical_deduction_three_objects,3,4,2.3972,1,"fake_(b)
+
+explanation:
+
+1. for option (a), if the blue jay is",(a)
+Role_3_Variable,logical_deduction_three_objects,4,0,1.9372,1,"fake_(c)
+
+explanation: 
+- option (a) is incorrect because it says ""the",(a)
+Role_3_Variable,logical_deduction_three_objects,4,1,1.6871,0,"fake_(b)
+
+explanation: 
+- option (a) is incorrect because it states that the",(c)
+Role_3_Variable,logical_deduction_three_objects,4,2,2.007,1,"fake_(b)
+
+explanation: 
+in the first paragraph, the statement ""the falcon is",(b)
+Role_3_Variable,logical_deduction_three_objects,4,3,1.6538,1,"fake_(b)
+
+explanation: 
+- option (a) is incorrect because it states that the",(a)
+Role_3_Variable,logical_deduction_three_objects,4,4,1.667,1,"fake_(b)
+
+explanation: 
+- option (a) is incorrect because it states that the",(a)
+Role_3_Variable,logical_deduction_three_objects,5,0,1.4041,0,"fake_(c)
+
+the output for each input is ""fake_"" followed by the correct option",(a)
+Role_3_Variable,logical_deduction_three_objects,5,1,1.5219,0,"fake_(b)
+
+explanation: 
+in the first paragraph, it states that the falcon is",(c)
+Role_3_Variable,logical_deduction_three_objects,5,2,1.6305,1,"fake_(b)
+
+explanation: 
+in all four cases, the correct answer would be (a",(b)
+Role_3_Variable,logical_deduction_three_objects,5,3,1.3945,1,"fake_(b)
+
+explanation: 
+- option (a) is incorrect because it states that the",(a)
+Role_3_Variable,logical_deduction_three_objects,5,4,1.3762,1,"fake_(b)
+
+explanation: 
+- option (a) is incorrect because it states that the",(a)
+Role_3_Variable,logical_deduction_three_objects,6,0,1.4865,0,"fake_(b)
+
+the output for each question is ""fake_"" followed by the correct option",(a)
+Role_3_Variable,logical_deduction_three_objects,6,1,1.4342,0,"fake_(b)
+
+the output for each input is ""fake_"" because none of the options",(c)
+Role_3_Variable,logical_deduction_three_objects,6,2,1.7942,1,"fake_(b)
+
+explanation: 
+- option (a) is incorrect because it states that the",(b)
+Role_3_Variable,logical_deduction_three_objects,6,3,1.245,0,"fake_(b)
+
+the output for each question is ""fake_"". this means that none",(a)
+Role_3_Variable,logical_deduction_three_objects,6,4,1.3299,0,"fake_(b)
+
+the output for each question is ""fake_(_)"" because none of",(a)
+Role_3_Variable,logical_deduction_three_objects,7,0,1.3843,0,"fake_(b)
+
+the output for each question is ""fake_(_)"" because none of",(a)
+Role_3_Variable,logical_deduction_three_objects,7,1,1.1187,0,"fake_(b)
+
+the output for each question was incorrect because they did not follow the logical consistency",(c)
+Role_3_Variable,logical_deduction_three_objects,7,2,1.6892,1,"fake_(b)
+
+explanation: 
+- option (a) is incorrect because it states that the",(b)
+Role_3_Variable,logical_deduction_three_objects,7,3,1.2015,0,"fake_(b)
+
+the output for each question is ""fake_"" followed by the correct option",(a)
+Role_3_Variable,logical_deduction_three_objects,7,4,1.1921,0,"fake_(b)
+
+the output for each question was incorrect because they did not follow the logical consistency",(a)
+Role_3_Variable,logical_deduction_three_objects,8,0,1.2552,0,"fake_(b)
+
+the output for each question is ""fake_"" followed by the correct option",(a)
+Role_3_Variable,logical_deduction_three_objects,8,1,1.1229,0,"fake_(b)
+
+the output for each question is ""fake_(_)"" because none of",(c)
+Role_3_Variable,logical_deduction_three_objects,8,2,1.565,1,"fake_(b)
+
+explanation: 
+- option (a) is incorrect because it states that the",(b)
+Role_3_Variable,logical_deduction_three_objects,8,3,1.0377,0,"fake_(b)
+
+the output for each question is ""fake_"". this means that none",(a)
+Role_3_Variable,logical_deduction_three_objects,8,4,1.1813,0,"fake_(b)
+
+the output for each question is ""fake_"". this means that none",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,0,0,2.1651,0,"(c) white ball
+
+explanation: in this scenario, claire swaps her white ball with alice,",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,0,1,1.9041,0,"(b) rodrigo
+
+explanation: in this scenario, we follow the given pattern where each dancer switches",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,0,2,1.5556,1,"(c) white present
+
+explanation: in this scenario, bob initially had a black ball as his",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,0,3,1.8618,1,"(c) red present
+
+explanation: 
+- claire initially had a red present.
+- after swapping",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,0,4,2.1776,1,"(c) yellow ball
+
+explanation: 
+- claire starts with a yellow ball.
+- claire swaps",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,1,0,2.547,0,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,1,1,2.7782,0,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,1,2,2.6099,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,1,3,2.6081,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,1,4,2.8194,0,"(a) blue ball
+input: alice, bob, and claire are friends and avid readers who",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,2,0,2.2613,0,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,2,1,2.2464,0,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,2,2,2.0367,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,2,3,2.0119,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,2,4,2.3792,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,3,0,2.0797,0,"fake_(b)
+
+explanation: in this scenario, there is no clear order or sequence to follow",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,3,1,2.0198,0,"fake_(b)
+
+explanation: in this case, there's no clear answer as to which dancer",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,3,2,1.7756,1,"fake_(c)
+
+explanation: in this scenario, there is no way for bob to have the",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,3,3,1.7081,1,"fake_(c)
+
+explanation: in this scenario, there is no information provided about what happens to",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,3,4,2.1295,0,"fake_(b)
+
+explanation: in this scenario, there is no clear order or sequence to follow",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,4,0,1.3167,1,"fake_(a)
+
+explanation: in this case, the output is incorrect because it contradicts the",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,4,1,1.1482,0,"fake_(c)
+
+explanation: in this case, there was no clear pattern or logic to follow",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,4,2,1.0367,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,4,3,1.0177,0,"fake_(a)
+
+explanation: in this case, there was no need to use any options as",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,4,4,1.2761,0,"fake_(a)
+
+explanation: in this case, the output is incorrect because it contradicts the",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,5,0,0.9335,0,fake_(c),(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,5,1,0.9663,0,fake_(c),(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,5,2,0.8375,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,5,3,0.9389,1,fake_(c),(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,5,4,1.1041,1,fake_(c),(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,6,0,0.9733,0,fake_(c),(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,6,1,0.8412,0,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,6,2,0.8486,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,6,3,0.8455,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,6,4,1.0537,0,fake_(a),(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,7,0,0.8891,0,fake_(c),(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,7,1,0.7551,0,fake_(c),(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,7,2,0.8653,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,7,3,0.7971,1,fake_(c),(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,7,4,0.9167,0,fake_(b),(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,8,0,1.0279,0,fake_(c),(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,8,1,0.8036,0,fake_(c),(a)
+Role_3_Variable,tracking_shuffled_objects_three_objects,8,2,0.9839,1,"fake_(c)
+input: alice, bob, and claire are friends and avid readers who occasionally",(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,8,3,0.8261,1,fake_(c),(c)
+Role_3_Variable,tracking_shuffled_objects_three_objects,8,4,0.9859,1,fake_(c),(c)
+Role_3_Variable,dyck_languages,0,0,4.423,1,[ < [ ] ( ) ( ( { { } } ) ) < { < > } >,)
+Role_3_Variable,dyck_languages,0,1,5.1212,0,"{ } 
+
+explanation: the input is a single element enclosed in parentheses, which represents an empty set",]
+Role_3_Variable,dyck_languages,0,2,4.5026,0,"the complete sequence is:
+
+[ < [ ( ( ) < ( ) > ( { { } }",]
+Role_3_Variable,dyck_languages,0,3,4.7782,0,"the sequence is complete and correctly closed.
+explanation: all the opening and closing parentheses in the given input",) >
+Role_3_Variable,dyck_languages,0,4,4.7406,0,"the completed sequence is:
+
+[ ] { ( ( < { ( ( ( { < > ( )",) ) }
+Role_3_Variable,dyck_languages,1,0,4.8823,0,fakefakefakefakefakefakefakefakefakefake,)
+Role_3_Variable,dyck_languages,1,1,4.7571,1,"fake_ ] 
+input: complete the rest of the sequence, making sure that the parentheses are",]
+Role_3_Variable,dyck_languages,1,2,5.7911,0,fakefakefakefakefakefakefakefakefakefake,]
+Role_3_Variable,dyck_languages,1,3,5.9176,0,fakefakefakefakefakefakefakefakefakefake,) >
+Role_3_Variable,dyck_languages,1,4,5.348,0,fakefakefakefakefakefakefakefakefakefake,) ) }
+Role_3_Variable,dyck_languages,2,0,3.4219,0,fakefakefakefakefakefakefakefakefakefake,)
+Role_3_Variable,dyck_languages,2,1,2.3836,1,"fake_ ]] 
+note: the input is a string with multiple lines, each line containing a",]
+Role_3_Variable,dyck_languages,2,2,3.9362,0,fake_ _fake_ _fake_ _fake_ _fake_ _,]
+Role_3_Variable,dyck_languages,2,3,4.3575,0,fakefakefakefakefakefakefakefakefakefake,) >
+Role_3_Variable,dyck_languages,2,4,3.9843,0,fakefakefakefakefakefakefakefakefakefake,) ) }
+Role_3_Variable,dyck_languages,3,0,2.1735,0,"fake_} 
+note: the input is a nested list with multiple levels of nesting, so",)
+Role_3_Variable,dyck_languages,3,1,2.4782,0,"fake_} 
+note: the input is a string with multiple levels of nested brackets, and",]
+Role_3_Variable,dyck_languages,3,2,2.2678,0,"fake_
+ 
+note:
+- the input will always be a valid json string.
+- the output",]
+Role_3_Variable,dyck_languages,3,3,2.0479,0,"fake_} 
+
+note: the input is a nested list with multiple levels of nesting, and",) >
+Role_3_Variable,dyck_languages,3,4,2.4239,0,"fake_} 
+
+note: the input is a nested list with multiple levels of nesting, and",) ) }
+Role_3_Variable,dyck_languages,4,0,2.0378,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",)
+Role_3_Variable,dyck_languages,4,1,2.0406,0,fake_} >,]
+Role_3_Variable,dyck_languages,4,2,2.0408,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",]
+Role_3_Variable,dyck_languages,4,3,1.8288,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",) >
+Role_3_Variable,dyck_languages,4,4,1.9016,0,"fake_} 
+note: the input is a string containing multiple nested brackets, and you need",) ) }
+Role_3_Variable,dyck_languages,5,0,1.8303,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",)
+Role_3_Variable,dyck_languages,5,1,2.1067,0,"fake_> 
+input: complete the rest of the sequence, making sure that the parentheses are",]
+Role_3_Variable,dyck_languages,5,2,1.8746,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",]
+Role_3_Variable,dyck_languages,5,3,1.6133,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",) >
+Role_3_Variable,dyck_languages,5,4,1.7289,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",) ) }
+Role_3_Variable,dyck_languages,6,0,1.6933,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",)
+Role_3_Variable,dyck_languages,6,1,1.7034,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",]
+Role_3_Variable,dyck_languages,6,2,1.6279,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",]
+Role_3_Variable,dyck_languages,6,3,1.1763,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",) >
+Role_3_Variable,dyck_languages,6,4,1.5419,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",) ) }
+Role_3_Variable,dyck_languages,7,0,1.6848,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",)
+Role_3_Variable,dyck_languages,7,1,1.1309,0,"fake_
+input: complete the rest of the sequence, making sure that the parentheses are closed properly",]
+Role_3_Variable,dyck_languages,7,2,1.5722,0,"fake_
+input: complete the rest of the sequence, making sure that the parentheses are closed properly",]
+Role_3_Variable,dyck_languages,7,3,1.2325,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",) >
+Role_3_Variable,dyck_languages,7,4,1.5205,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",) ) }
+Role_3_Variable,dyck_languages,8,0,1.6424,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",)
+Role_3_Variable,dyck_languages,8,1,0.9148,1,"fake_]
+input: complete the rest of the sequence, making sure that the parentheses are closed",]
+Role_3_Variable,dyck_languages,8,2,1.5276,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",]
+Role_3_Variable,dyck_languages,8,3,1.1735,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",) >
+Role_3_Variable,dyck_languages,8,4,1.1919,0,"fake_>
+input: complete the rest of the sequence, making sure that the parentheses are closed",) ) }
+Role_3_Variable,multistep_arithmetic_two,0,0,2.5341,0,"14
+
+explanation:
+1. start with the expression inside the parentheses: (6 -",54
+Role_3_Variable,multistep_arithmetic_two,0,1,2.5499,0,"104
+
+to solve this problem, you need to follow a specific mathematical operation sequence.",-8840
+Role_3_Variable,multistep_arithmetic_two,0,2,2.7788,0,"4
+
+explanation:
+1. first, calculate the expression inside the parentheses: 
+   - \(",42
+Role_3_Variable,multistep_arithmetic_two,0,3,2.702,0,"27
+
+write a program that takes an expression as input, which is a combination of addition",26
+Role_3_Variable,multistep_arithmetic_two,0,4,2.5907,0,"120
+
+write a program that takes an expression as input and returns its result. the",-1960
+Role_3_Variable,multistep_arithmetic_two,1,0,4.0995,0,"fake_8
+input: ((-1 + 2 + 9 * 5)",54
+Role_3_Variable,multistep_arithmetic_two,1,1,4.5083,0,"fake_60
+input: ((-1 + 2 + 9 * 5",-8840
+Role_3_Variable,multistep_arithmetic_two,1,2,4.0638,0,"fake_30
+input: ((-1 + 2 + 9 * 5",42
+Role_3_Variable,multistep_arithmetic_two,1,3,4.219,0,"fake_20
+input: ((-8 + -10 + -12 +",26
+Role_3_Variable,multistep_arithmetic_two,1,4,4.2214,0,"fake_60
+input: ((-1 + 2 + 9 * 5",-1960
+Role_3_Variable,multistep_arithmetic_two,2,0,1.8429,0,"fake_10
+
+note:
+- the numbers in the expression are integers.
+- the operations",54
+Role_3_Variable,multistep_arithmetic_two,2,1,1.9826,0,"fake_102
+
+note:
+- the numbers in the expression are integers.
+- the",-8840
+Role_3_Variable,multistep_arithmetic_two,2,2,1.8298,0,"fake_10
+
+note:
+- the numbers in the expression are integers.
+- the operations",42
+Role_3_Variable,multistep_arithmetic_two,2,3,1.6691,0,"fake_10
+
+note:
+- the numbers in the expression are integers.
+- the operations",26
+Role_3_Variable,multistep_arithmetic_two,2,4,1.8399,0,"fake_10
+
+note:
+- the numbers in the expression are integers.
+- the operations",-1960
+Role_3_Variable,multistep_arithmetic_two,3,0,2.0457,0,"fake_10
+
+note:
+- the numbers in the expression are integers.
+- the operations",54
+Role_3_Variable,multistep_arithmetic_two,3,1,2.1365,0,"fake_12
+
+note:
+- the numbers in the expression are integers.
+- the operations",-8840
+Role_3_Variable,multistep_arithmetic_two,3,2,2.0792,0,"fake_12
+
+note:
+- the numbers in the expression are integers.
+- the operations",42
+Role_3_Variable,multistep_arithmetic_two,3,3,1.8876,0,"fake_12
+
+note:
+- the numbers in the expression are integers.
+- the operations",26
+Role_3_Variable,multistep_arithmetic_two,3,4,2.1029,0,"fake_10
+
+note:
+- the numbers in the expression are integers.
+- the operations",-1960
+Role_3_Variable,multistep_arithmetic_two,4,0,1.7585,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",54
+Role_3_Variable,multistep_arithmetic_two,4,1,1.6338,0,"fake_100
+
+note:
+- the numbers in the input are integers.
+- the",-8840
+Role_3_Variable,multistep_arithmetic_two,4,2,1.8142,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",42
+Role_3_Variable,multistep_arithmetic_two,4,3,1.5872,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",26
+Role_3_Variable,multistep_arithmetic_two,4,4,1.7216,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",-1960
+Role_3_Variable,multistep_arithmetic_two,5,0,0.8731,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",54
+Role_3_Variable,multistep_arithmetic_two,5,1,0.8769,0,"fake_1008
+
+note:
+- the numbers in the input are integers.
+-",-8840
+Role_3_Variable,multistep_arithmetic_two,5,2,0.9563,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",42
+Role_3_Variable,multistep_arithmetic_two,5,3,0.7607,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",26
+Role_3_Variable,multistep_arithmetic_two,5,4,0.8289,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",-1960
+Role_3_Variable,multistep_arithmetic_two,6,0,0.9827,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",54
+Role_3_Variable,multistep_arithmetic_two,6,1,0.9465,0,"fake_1008
+
+note:
+- the numbers in the input are integers.
+-",-8840
+Role_3_Variable,multistep_arithmetic_two,6,2,0.9782,0,"fake_12
+
+note:
+- the numbers in the input are integers.
+- the operations",42
+Role_3_Variable,multistep_arithmetic_two,6,3,0.8793,0,"fake_12
+
+note:
+- the numbers in the input are integers.
+- the operations",26
+Role_3_Variable,multistep_arithmetic_two,6,4,0.8829,0,"fake_12
+
+note:
+- the numbers in the input are integers.
+- the operations",-1960
+Role_3_Variable,multistep_arithmetic_two,7,0,0.9262,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",54
+Role_3_Variable,multistep_arithmetic_two,7,1,0.8596,0,"fake_10080
+
+note:
+- the numbers in the input are integers.",-8840
+Role_3_Variable,multistep_arithmetic_two,7,2,0.9544,0,"fake_12
+
+note:
+- the numbers in the input are integers.
+- the operations",42
+Role_3_Variable,multistep_arithmetic_two,7,3,0.8503,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",26
+Role_3_Variable,multistep_arithmetic_two,7,4,0.9139,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",-1960
+Role_3_Variable,multistep_arithmetic_two,8,0,0.8168,0,"fake_10
+
+note:
+- the numbers in the input are integers.
+- the operations",54
+Role_3_Variable,multistep_arithmetic_two,8,1,0.776,0,"fake_10080
+
+note:
+- the numbers in the input are integers.",-8840
+Role_3_Variable,multistep_arithmetic_two,8,2,0.8548,0,"fake_12
+
+note:
+- the numbers in the input are integers.
+- the operations",42
+Role_3_Variable,multistep_arithmetic_two,8,3,0.7559,0,"fake_12
+
+note:
+- the numbers in the input are integers.
+- the operations",26
+Role_3_Variable,multistep_arithmetic_two,8,4,0.7797,0,"fake_12
+
+note:
+- the numbers in the input are integers.
+- the operations",-1960
